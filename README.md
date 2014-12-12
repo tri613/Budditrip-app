@@ -1,23 +1,3 @@
 Budditrip-app
 =============
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Budditrip - login(APP)</title>
-        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-
-    </head>
-    <body>
-
-    <script>
-
-
-    window.location.replace("http://140.119.19.35/app/login.html");
-  
-
-    </script>
-
-
-    </body>
-</html>
+yeahhhhhhh

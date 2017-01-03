@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-image:url(../../homeimg/bg.png);
+	font-family:"微軟正黑體";
+}
+
+.centerBlock{
+	background: rgba(255,255,255,0.7);	
+	display:block;
+	width:90%;
+    -webkit-border-radius: 4px;
+	line-height:3em;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:30px;
+	margin: 50px auto;
+}
+
+.centerBlock2{
+	background: rgba(255,255,255,0.7);	
+	display:block;
+	width:70%;
+    -webkit-border-radius: 4px;
+	line-height:3em;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:30px;
+	margin: 50px auto;
+}
+
+input {
+	border: 1px solid #BBBBBB;
+	background:#FFF;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	width:100px;
+	height:30px;
+	margin-top:10px;
+}
+
+.inputOK{
+	border: 2px solid #0C6;
+}
+
+.inputERROR{
+	border:2px solid #F00;
+}
+
+.ErrorSpan{
+	color:#666;
+	font-size:12px;
+}
+	
+
+.button{
+	border: 1px solid #BBBBBB;
+	background:#666;
+	color:#FFF;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	height:50px;
+	margin-top:20px;
+}
+
+.button:hover{
+	border: 1px solid #BBBBBB;
+	background:#666;
+	color:#F96;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	height:50px;
+	margin-top:20px;
+}
+
+
+.title{
+	font-size:30px;
+	font-weight:700;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.title-out{
+	display: block;
+	margin: 10px auto;
+	font-size:30px;
+	font-weight:700;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align: center;
+}
+
+.ps{
+	color:#666;
+	margin-top:40px;
+	line-height:1.5em;
+}
+
+.ps a{
+	color:#699;
+	text-decoration:none;
+}
+
+.ps a:hover{
+	color:#F96;
+}
+
+.TN-table {
+	margin: 0 auto;
+	text-align: center;
+	height:300px;
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	border: 1px;
+	border-color:#F90;
+	border-style:inset;
+	background: rgba(255,255,255,0.8);
+	
+	
+}
+
+.TN-table2 {
+	margin: 0 auto;
+	text-align: center;
+	height:300px;
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	border: 1px;
+	border-color:#F66;
+	border-style:inset;
+	background: rgba(255,255,255,0.8);
+	
+}
+
+.tableTitle{
+	background-color:#F90;
+	width: 20%;
+	text-align: center;
+	color:#FFF;
+	font-size:20px;
+	font-family:"微軟正黑體";
+}
+
+.tableTitle2{
+	background-color:#F66;
+	width: 20%;
+	text-align: center;
+	color:#FFF;
+	font-size:20px;
+	font-family:"微軟正黑體";
+}
+
+.TN-table tr td{
+	height:50px;
+	border:1px;
+	border-color:#F90;
+
+} 
+
+.TN-table tr td a{
+	color:#699;
+	text-decoration:none;
+}
+
+.TN-table tr td a:hover{
+	color:#F96;
+}
+
+.TN-table2 tr td{
+	height:50px;
+	border:1px;
+	border-color:#F66;
+} 
+
+.TN-table2 tr td a{
+	color:#699;
+	text-decoration:none;
+}
+
+.TN-table2 tr td a:hover{
+	color:#F96;
+}
+
+.NP-table {
+	margin: 0 auto;
+	width:80%;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	border-color:#CFC;
+	border-image-slice:20;
+	border-image-width:5px;
+	
+}
+
+.NP-table2 {
+	padding-top: 10px;
+	padding:10px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	border: 10px;
+	border-color:#F69;
+	width:80%;
+	
+}
+
+.NP-table3 {
+	padding-top: 10px;
+	padding:10px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	border: 10px;
+	border-color:#9CF;
+	width:80%;
+	
+}
+
+
+
+.author{
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	font-size:16px;
+	width:100px;
+	text-align:center;
+	background-color:#CFC;
+}
+
+.show-n{
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	text-shadow: 3px 3px 3px #CCCCCC;
+	font-size:40px;
+	font-weight:bold;
+	color:#F60;
+}
+
+.show-d{
+	font-family: "微軟正黑體", "Segoe Print";
+	font-size:16px;
+	color:#666;
+}
+
+.show-c{
+	color:#666;
+}
+
+.message{
+	font-family: Verdana, Geneva, sans-serif "微軟正黑體";
+	font-weight:bold;
+	color:#666;
+}
+
+.feedback{
+	font-family: "Times New Roman", Times, serif "微軟正黑體"; 
+	font-size:16px;
+	color:#333;
+}
+
+.travelnote{
+	font-family: "Times New Roman", Times, serif "微軟正黑體"; 
+	font-size:16px;
+	background-color:#FFF;
+	padding:10px;
+}
+
+div.box{
+	font-size: 14px; 
+	text-align: left;
+	padding:10px;
+    color: #4aa83b;
+	
+    width: 80%;
+    /* 元素水平置中 */
+}
+
+div.box2{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+	padding:10px;
+	width: 80%;
+    margin:auto;
+		
+}
+
+.time1{
+	color:#000;
+	font-size:24px;
+	font:"微軟正黑體";
+	font-weight: bolder;
+	
+}
+
+.homeimg{
+	padding:0px;
+}
+
+#footer{
+	font-family:"arabic Typesetting";
+	font-size:36px;
+	background: rgba(255,255,255,0.7);
+	text-align:center;
+	width:100%;
+	margin:auto;
+}

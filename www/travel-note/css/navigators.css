@@ -1,0 +1,146 @@
+/*top bar*/
+
+.topNav{
+	position:absolute; left:0; top:0;
+	width:100%;
+	font-family:"微軟正黑體";
+	background-color:#666058;
+	height:30px;
+	line-height:30px;
+	margin:0;
+	opacity:0.9;
+}
+
+.topNavText a{
+	color:#EDE8AD;
+	text-decoration:none;
+	font-family:"Courier New", Courier, monospace;
+	margin-left:10px;
+}
+
+.topNavText a:hover{
+	color:#F96;
+	font-family:"Courier New", Courier, monospace;
+	margin-left:10px;
+}
+
+.topButton a{
+	display:block;	
+	float:right;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	padding-right:0;
+	margin-right: 10px;
+}
+
+.topButton a:hover{
+	color:#CCC;
+}
+
+/*navigation bar*/
+
+.nav{
+	text-align:center;
+	position:absolute; left:0; top:30px;
+	font-family:"微軟正黑體";
+	font-size:18px;
+	background-color:#F0F2ED;
+	width:100%;
+	height:50px;
+}
+
+.nav_bg{
+	width:55%;
+	margin: 0px auto;
+}
+
+.nav_bg ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+.nav_bg li{
+	float:left;
+	width:20%;
+	height:50px;
+	background-color:#F0F2ED; 
+	text-align:center;
+	overflow:hidden;  
+	margin: 0px auto;
+}
+
+.nav_bg ul li a{  
+	text-decoration:none;  
+	display:block;	
+	color:#54615C; 
+	line-height:3em;
+} 
+
+.nav_bg li a:hover{ 
+	display:block;	
+	/*width:inherit; height:inherit;*/
+	color:#8B918B;
+	font-weight: 900;
+} 
+
+/*side Navigation Bar */
+
+.sideNav{
+	z-index: 100;
+	position:fixed; 
+	top:100px;
+	left: -215px;
+}
+
+.sideNavList {
+	position: relative;
+	width: 250px;
+	list-style: none;
+	-webkit-box-shadow: 5px 6px 16px -2px rgba(0,0,0,0.46);
+	-moz-box-shadow: 5px 6px 16px -2px rgba(0,0,0,0.46);
+	box-shadow: 5px 6px 16px -2px rgba(0,0,0,0.46);
+}
+
+.sideNavList li a{
+	padding-left: 20px;
+	text-decoration: none;
+	display:block;	
+	border-bottom: 1px solid #D1DECC;
+	background-color: #E7E6ED;
+	line-height:3em;
+	color:#54615C;
+}
+
+.sideNavList li a:hover{ 
+	display:block;	
+	color:#8B918B;
+	font-weight: 900;
+} 
+
+.menuIcon{
+	font-family:"Courier New", Courier, monospace;
+	display: block;
+	background-color: #FAEC55;
+	width: 250px;
+	float:right;
+	text-align: right;
+	letter-spacing:2px;
+	padding-right: 10px;
+}
+
+.menuIcon img{
+	height: 28px;
+	width: 28px;
+	float:right;
+}
+
+#footer{
+	font-family:"arabic Typesetting";
+	font-size:36px;
+	background: rgba(255,255,255,0.7);
+	text-align:center;
+	width:100%;
+	margin:auto;
+}

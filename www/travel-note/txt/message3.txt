@@ -1,0 +1,15 @@
+name::ALLY@@
+mail::yahoo@@@
+title::請問住宿@@
+content::住宿是哪裡找的@@
+@@end
+name::小明@@
+mail::amy@gmail@@
+title::加油@@
+content::我也想去@@
+@@end
+name::美美@@
+mail::lievy33@gmail.com@@
+title::我也想去玩@@
+content::好想去喔~~~@@
+@@end

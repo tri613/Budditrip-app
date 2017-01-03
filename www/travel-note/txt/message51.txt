@@ -1,0 +1,10 @@
+name::Eric@@
+mail::@@
+title::hello@@
+content::好用斃了!!@@
+@@end
+name::陳奕伶@@
+mail::@@
+title::看起來真有趣!!!@@
+content::作者大大太會寫了吧!!!!@@
+@@end

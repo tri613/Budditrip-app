@@ -1,0 +1,10 @@
+name::ADC@@
+mail::@@
+title::ㄏㄏ@@
+content::ㄏㄏ@@
+@@end
+name::test@@
+mail::test@@
+title::test@@
+content::test@@
+@@end

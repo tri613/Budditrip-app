@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map</title>
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <link rel="stylesheet" href="../css/infoWindow.css" type="text/css">
+    <link rel="stylesheet" href="../css/ajaxLoading.css" type="text/css">
+    <link rel="stylesheet" href="../css/navBar.css" type="text/css">   
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="../jquery-1.11.1.min.js"></script>
+    <script>
+// In the following example, markers appear when the user clicks on the map.
+// The markers are stored in an array.
+// The user can then click an option to hide, show or delete the markers.
+var map;
+var NewMarker;
+var DBmarkers = [];
+
+
+$(function(){
+  $.ajax({
+                    url:"http://140.119.19.35/app/map/sendDBMarkers.php",
+                    type:"POST",
+                    data: {test:'test'},
+                    //dataType:"json",
+         
+                    success:function(msg)
+                        {   //alert("AA");
+                            DBmarkers = JSON.parse(msg);
+                            DrawDBmarkers(DBmarkers);                           
+                        },
+                    error: function(log)
+                        {
+                            alert('Failed' + JSON.stringify(log));
+                        }
+            });
+})
+
+function initialize() {
+  var mapOptions = {
+    zoom: 15
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+  
+   if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+
+       var markerYou = new google.maps.Marker({
+        position: pos,
+        map: map,
+        icon: '../css/star.png'
+      });
+      
+      var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: '你在這!'
+      });
+
+
+     infowindow.open(map,markerYou);
+
+      map.setCenter(pos);
+
+    }, function() {
+      handleNoGeolocation(true);
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleNoGeolocation(false);
+  }
+}
+
+function handleNoGeolocation(errorFlag) {
+  if (errorFlag) {
+    var content = 'Error: The Geolocation service failed.';
+  } else {
+    var content = 'Error: Your browser doesn\'t support geolocation.';
+  }
+
+  var options = {
+    map: map,
+    position: new google.maps.LatLng(24.986, 121.575),
+    content: content
+  };
+
+  var infowindow = new google.maps.InfoWindow(options);
+  map.setCenter(options.position);
+}
+
+function DrawDBmarkers(DBmarkers){
+
+  for (var i = 0; i <= DBmarkers.length; i++) {
+    var DBmarker = DBmarkers[i];
+    var position = new google.maps.LatLng(DBmarker[0],DBmarker[1]);
+    var marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                info: DBmarker[2]
+            });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: "test"
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+      infowindow.setContent(this.info);
+      infowindow.open(map, this);
+    });
+  }
+}
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div class="nav">
+      <span style="padding:10px;"> 瀏覽模式中</span>
+      <a style="padding:5px;" href="http://140.119.19.35/app/map/addMarker.html">新增地標</a>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="sending" style=" text-align: center; display:none;">
+      <div class="ajax-loader"><img src="../css/ajax-loader.gif" /></div>
+    </div>
+
+
+  </body>
+</html>
+

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.content{
+    position: absolute;top:0; left:0; 
+    width: 100%;  
+    height: 100%;      
+    background-image: url(bg.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+
+}
+
+.title{
+	font-size: 30px;	
+	font-weight: 900;
+	font-family: Arial;
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+
+.inputArea{
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #BBBBBB;
+  //background:#EBF2F0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  }
+
+.inputArea[type='text'],[type='password']{
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	padding-left: 10px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  	padding-left: 10px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   	padding-left: 10px;
+}
+
+
+.btn{
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  display:block;
+  border: 1px solid #BBBBBB;
+  color:white;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #94D6BE;
+	}
+
+.btn:hover{
+  border: 1px solid #BBBBBB;
+  background:#394238;
+  color:#FFF;
+  -webkit-border-radius: 3px; // Safari 和 Chrome
+  height:30px;
+  }

@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-color:#67DBC0;
+}
+
+.topNav{
+	position:absolute; left:0; top:0;
+	width:100%;
+	background-color:#666058;
+	height:30px;
+	line-height:30px;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+.topNavText a{
+	color:#FFF;
+	text-decoration:none;
+	font-family:"Courier New", Courier, monospace;
+	margin-left:10px;
+}
+
+.topNavText a:hover{
+	color:#F96;
+	font-family:"Courier New", Courier, monospace;
+	margin-left:10px;
+}
+
+.centerBlock{
+	background:#FFF;
+	display:block;
+	width:500px;
+    -webkit-border-radius: 4px;
+	line-height:3em;
+	padding-left:20px;
+	padding-bottom:30px;
+	margin: 60px auto;
+}
+
+input {
+	border: 1px solid #BBBBBB;
+	background:#FFF;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	width:100px;
+	height:30px;
+	margin-top:10px;
+}
+
+.inputOK{
+	border: 2px solid #0C6;
+}
+
+.inputERROR{
+	border:2px solid #F00;
+}
+
+.ErrorSpan{
+	color:#666;
+	font-size:12px;
+}
+	
+
+.button{
+	border: 1px solid #BBBBBB;
+	background:#666;
+	color:#FFF;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	height:50px;
+	margin-top:20px;
+}
+
+.button:hover{
+	border: 1px solid #BBBBBB;
+	background:#666;
+	color:#F96;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	height:50px;
+	margin-top:20px;
+}
+
+
+.title{
+	font-size:30px;
+	font-weight:700;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.ps{
+	color:#666;
+	margin-top:40px;
+	line-height:1.5em;
+}
+
+.ps a{
+	color:#699;
+	text-decoration:none;
+}
+
+.ps a:hover{
+	color:#F96;
+}

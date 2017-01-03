@@ -1,0 +1,10 @@
+name::天天@@
+mail::poo@gmail@@
+title::游泳@@
+content::我也想遊~@@
+@@end
+name::小華@@
+mail::qoo@gmail@@
+title::LOOKS BAD@@
+content::我覺得這不太好@@
+@@end

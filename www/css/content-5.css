@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-image:url(../homeimg/bg.png);
+}
+
+.centerBlock{
+	background: rgba(255,255,255,0.7);
+	display:block;
+	width:80%;
+	height:2000px;
+    -webkit-border-radius: 4px;
+	line-height:1.5em;
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:30px;
+	margin:auto;
+	margin-top: 30px;
+	
+	font-family:"微軟正黑體";
+	
+}
+
+
+input {
+	border: 1px solid #BBBBBB;
+	background:#FFF;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	width:100px;
+	height:20px;
+	margin-top:10px;
+}
+.inputOK{
+	border: 2px solid #0C6;
+}
+
+.inputERROR{
+	border:2px solid #F00;
+}
+
+.ErrorSpan{
+	color:#666;
+	font-size:12px;
+}
+	
+
+.button{
+	border: 1px solid #BBBBBB;
+	background:#666;
+	color:#FFF;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	height:50px;
+	margin-top:20px;
+}
+
+.button:hover{
+	border: 1px solid #BBBBBB;
+	background:#666;
+	color:#F96;
+    -webkit-border-radius: 3px; // Safari 和 Chrome
+	height:50px;
+	margin-top:20px;
+}
+
+
+.title{
+	font-size:30px;
+	font-weight:700;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.title-out{
+	display: block;
+	margin: 10px auto;
+	font-size:30px;
+	font-weight:700;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align: center;
+}
+
+.ps{
+	color:#666;
+	margin-top:40px;
+	line-height:1.5em;
+}
+
+.ps a{
+	color:#699;
+	text-decoration:none;
+}
+
+.ps a:hover{
+	color:#F96;
+}
+
+.TN-table {
+	padding-top: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tableTitle{
+	background-color: yellow;
+	width: 300px;
+}
+
+.tableTitle-user{
+	background-color: yellow;
+	width: 100px;
+}
+
+
+.TN-table tr{
+	width: 400px;
+}
+
+/*group*/
+
+div.box1{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+	padding:20px;
+	width: 15%;
+	height: 230px;
+	background: rgba(255,204,204,0.7);
+	float:left;
+	border: 30px hidden;
+	position:relative;
+	text-align:center;
+	margin-bottom:20px;
+	margin-right:20px;
+
+	color:#666;
+		
+}
+
+div.box1 a{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+	color:#666;
+	font-size:20px;
+	text-shadow: 1px 1px 1px #999999;
+	text-decoration:none;
+		
+}
+
+
+div.box1 a:hover{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+    color:#666;
+		
+}
+div.box2{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+	padding:20px;
+	width: 15%;
+	height: 230px;
+	background: rgba(255,204,204,0.7);
+	float:left;
+	position: relative;
+	border: 30px hidden;
+	text-align:center;
+	margin-bottom:20px;
+	margin-right:20px;
+	color:#666;
+
+		
+}
+
+div.box2 a{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+	color:#666;
+	font-size:20px;
+	text-shadow: 1px 1px 1px #999999;
+	text-decoration:none;
+		
+}
+
+
+div.box2 a:hover{
+    font-family: "Times New Roman", Times, serif "微軟正黑體";
+    color:#666;
+		
+}
+
+.c{
+	clear:left;
+}
+
+.b{
+	font-size:30px;
+	color: #6CC;
+	top:480px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #666666;
+}
+
+.b1{
+	float:left;
+	font-size:30px;
+	color:#6CC;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #666666;
+	margin: 0px auto;
+	clear:left;
+}
+
+.b2{
+	float:left;
+	position: relative;
+	clear:left;
+}
+
+/*g.info*/
+
+.content{
+	margin-left: 100px;
+	vertical-align: central;
+	color:#666 ;
+}
+
+
+
+#footer{
+	font-family:"arabic Typesetting";
+	font-size:36px;
+	background: rgba(255,255,255,0.7);
+	text-align:center;
+	width:100%;
+	margin:auto;
+	clear:left;
+}

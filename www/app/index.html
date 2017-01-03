@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Budditrip - login(APP)</title>
+        <link rel="stylesheet" href="css/ajaxLoading.css" type="text/css">
+   		
+        <link rel="stylesheet" href="css/login.css" type="text/css">
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+
+    </head>
+    <body>
+    <div class="content">
+    <div class="title">Budditrip.</div>
+    <br>
+
+    <input type="text" id="username" class="inputArea" placeholder="帳號"><br>
+    <input type="password"  id="password" class="inputArea" placeholder="密碼"><br>
+    <input type="button" value="登入" class="btn" onClick="send()">    
+    <div id="sending" style=" text-align: center; display:none;">
+      <div class="ajax-loader"><img src="css/ajax-loader.gif" /></div>
+    </div>
+    </div>
+
+
+    <script>
+
+    function send(){
+    if($("#username").val()!="" &&$("#password").val()!="" ){
+         $.ajax({
+                    
+                    url:"http://140.119.19.35/app/login/login_BE.php",
+                    type:"POST",
+                    data: {
+                        username: $("#username").val(),
+                        password: $("#password").val()
+                    },
+                    dataType:"html",
+                    beforeSend:function()
+                        {
+                           $('#sending').show();
+                        },
+                    success:function(response)
+                        {
+                            if(response == 'T'){
+                                $('#sending').show();
+                                setTimeout(function(){window.location.href = "http://140.119.19.35/app/map/map.html";}, 2000);
+							}else{
+								alert("帳號或密碼有誤!");
+                                $("#sending").hide();
+                            }
+                        },
+                    error: function()
+                        {
+                            alert("Fail");
+                        }
+            });
+        }else{
+            alert("你有東西沒填喔!");
+        }
+    }
+
+    </script>
+
+
+    </body>
+</html>

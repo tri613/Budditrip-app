@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Enter Marker Information</title>
+    <style>
+      html, body, #map-canvas {
+        height: 80%;
+        margin: 0px;
+        padding: 0px
+      }
+    .nav{
+    background-color: #393B40;
+    color: white;
+    height: 30px;
+    line-height: 1.8em;
+    }
+
+    </style>
+    <link rel="stylesheet" href="../css/ajaxLoading.css" type="text/css">
+    <link rel="stylesheet" href="../css/infoEdit.css" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="../jquery-1.11.1.min.js"></script>
+    <script>
+
+    function send(){
+    if( $("#title").val() !="" && $("#info").val() != ""){
+      $.ajax({
+                    url:"http://140.119.19.35/app/map/saveMarker.php",
+                    type:"POST",
+                    data: {
+                      title: $("#title").val(),
+					  address: $('#address').val(),
+                      info: $("#info").val()
+                    },
+                    dataType:"html",
+                    beforeSend:function()
+                        {
+                          $("#sending").show();
+                        },
+                    success:function(msg)
+                        {
+                            $("#sending").show();
+							setTimeout(function(){window.location.href = "http://140.119.19.35/app/map/map.html";}, 2000);
+                        },
+                    error: function(log)
+                        {
+                            alert('failed' +  JSON.stringify(log));
+                        }
+            });
+      }else{
+        alert("Hey有東西沒填喔!");
+      }
+  }
+  function cancel(){
+    window.location.replace("http://140.119.19.35/app/map/map.html");
+  }
+
+  function reset() {
+        window.location.replace("http://140.119.19.35/app/map/addMarker.html");
+  }
+
+    </script>
+  </head>
+  <body>  
+  <div class="nav"><span style="padding:10px;">請輸入店家資訊</span></div>
+  <div id="centerDiv">
+  <input type="text" class="inputArea" id="title" placeholder="標題*"><br>
+  <input type="text" class="inputArea" id="address" placeholder="地址"><br>
+  <textarea type="text" class="inputArea" rows="3" id="info" placeholder="店家資訊*"></textarea><br>
+  <input type="button" class="btn" onClick="send();" value="發送">  
+  <input type="button" class="btn" onClick="cancel();" value="取消新增">
+  <input type="button" class="btn" onClick="reset();" value="重新選擇地標">
+  <div id="sending" style=" text-align: center; display:none;">
+   <img src="../css/ajax-loader.gif" class="ajax-loader"/>
+  </div>
+  </div>
+
+  </body>
+</html>
+
